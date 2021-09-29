@@ -1,1 +1,1 @@
-web: gunicorn neuralearn-ocr.wsgi
+web: gunicorn neuralearn-ocr:app
