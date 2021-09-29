@@ -20,14 +20,15 @@ UPLOAD_FOLDER = './data/images/'
 @app.route('/', methods = ["GET","POST"])
 def main():
 
-    if request.method == 'POST':
-        file = request.files['file']
-        image_bytes = file.read()
+    # if request.method == 'POST':
+    #     file = request.files['file']
+    #     image_bytes = file.read()
 
-        image = np.asarray(bytearray(image_bytes), dtype="uint8")
-        image = cv2.imdecode(image, cv2.IMREAD_COLOR)
+    #     image = np.asarray(bytearray(image_bytes), dtype="uint8")
+    #     image = cv2.imdecode(image, cv2.IMREAD_COLOR)
 
-        return {'output':OCRDet().pred(image)}
+    #     return {'output':OCRDet().pred(image)}
+        
     return {'hello':'hello'}
     
 @app.errorhandler(500)
