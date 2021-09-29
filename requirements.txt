@@ -42,7 +42,7 @@ networkx==2.6.3
 nodeenv==1.6.0
 numpy==1.19.3
 onnx==1.9.0
-python3-opencv
+opencv-python==4.3.0
 packaging==21.0
 paddle2onnx==0.8.2
 paddlehub==2.1.1
