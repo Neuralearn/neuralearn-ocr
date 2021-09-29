@@ -4,8 +4,8 @@ from logging import Formatter, FileHandler
 from flask import Flask, request, jsonify, render_template
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
-#from module import OCRDet
-#import cv2
+from module import OCRDet
+import cv2
 import numpy as np
 from PIL import Image
 import io
@@ -20,14 +20,14 @@ UPLOAD_FOLDER = './data/images/'
 @app.route('/', methods = ["GET","POST"])
 def main():
 
-    # if request.method == 'POST':
-    #     file = request.files['file']
-    #     image_bytes = file.read()
+    if request.method == 'POST':
+        file = request.files['file']
+        image_bytes = file.read()
 
-    #     image = np.asarray(bytearray(image_bytes), dtype="uint8")
-    #     image = cv2.imdecode(image, cv2.IMREAD_COLOR)
+        image = np.asarray(bytearray(image_bytes), dtype="uint8")
+        image = cv2.imdecode(image, cv2.IMREAD_COLOR)
 
-    #     return {'output':OCRDet().pred(image)}
+        return {'output':OCRDet().pred(image)}
 
     return {'hello':'hello'}
     
