@@ -1,1 +1,1 @@
-web: gunicorn neuralearn-ocr:app
+web: gunicorn -w 5 neuralearn-ocr:app
