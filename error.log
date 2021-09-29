@@ -1,0 +1,607 @@
+2021-09-27 23:18:28,298 INFO:             errors [in app.py:52]
+2021-09-28 00:09:52,012 INFO:             errors [in app.py:52]
+2021-09-28 00:11:27,342 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:11:39,315 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:11:46,500 INFO:             errors [in app.py:52]
+2021-09-28 00:11:52,958 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:13:50,442 ERROR:             Exception on / [GET] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 14, in main
+    return jsonify(
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-09-28 00:14:11,028 ERROR:             Exception on / [GET] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 14, in main
+    return jsonify(
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-09-28 00:14:12,478 ERROR:             Exception on / [GET] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 14, in main
+    return jsonify(
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-09-28 00:14:13,788 ERROR:             Exception on / [GET] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 14, in main
+    return jsonify(
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-09-28 00:15:05,407 ERROR:             Exception on / [GET] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 14, in main
+    for i in range(5):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-09-28 00:15:42,404 ERROR:             Exception on / [GET] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 14, in main
+    for i in range(5):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-09-28 00:17:18,508 ERROR:             Exception on / [GET] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 14, in main
+    for i in range(5):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-09-28 00:17:39,807 ERROR:             Exception on / [GET] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 14, in main
+    for i in range(5):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-09-28 00:18:05,110 ERROR:             Exception on / [GET] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 14, in main
+    return {'hello':'hello'}
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-09-28 00:21:55,734 INFO:             errors [in app.py:52]
+2021-09-28 00:22:21,716 ERROR:             Exception on /v1/ocr/ [GET] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:22:29,028 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:22:44,205 INFO:             errors [in app.py:52]
+2021-09-28 00:22:46,693 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:24:00,578 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:24:01,612 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:45:39,632 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:45:56,300 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:46:13,797 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:48:57,070 INFO:             errors [in app.py:51]
+2021-09-28 00:48:59,226 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 00:49:08,580 ERROR:             Exception on /v1/ocr/ [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for None did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-28 01:04:17,358 INFO:             errors [in app.py:58]
+2021-09-28 01:04:23,922 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 23, in main
+    filename = secure_filename(file.filename)
+NameError: name 'secure_filename' is not defined
+2021-09-28 01:05:42,694 INFO:             errors [in app.py:59]
+2021-09-28 01:32:21,124 INFO:             errors [in app.py:50]
+2021-09-28 01:32:43,539 INFO:             errors [in app.py:50]
+2021-09-28 01:32:48,239 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 25, in main
+    image = Image.open(io.BytesIO(image_bytes))
+NameError: name 'Image' is not defined
+2021-09-28 01:33:08,828 INFO:             errors [in app.py:51]
+2021-09-28 01:33:09,890 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 26, in main
+    image = Image.open(io.BytesIO(image_bytes))
+NameError: name 'io' is not defined
+2021-09-28 01:34:13,055 INFO:             errors [in app.py:52]
+2021-09-28 01:34:13,982 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 27, in main
+    image = Image.open(io.BytesIO(image_bytes))
+NameError: name 'image_bytes' is not defined
+2021-09-28 01:34:50,314 INFO:             errors [in app.py:52]
+2021-09-28 01:34:51,210 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 29, in main
+    return {'h':OCRDet.pred(image)}
+AttributeError: type object 'OCRDet' has no attribute 'pred'
+2021-09-28 01:36:44,810 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 29, in main
+    return {'h':OCRDet.pred(image)}
+AttributeError: type object 'OCRDet' has no attribute 'pred'
+2021-09-28 01:36:53,379 INFO:             errors [in app.py:52]
+2021-09-28 01:36:57,960 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 29, in main
+    return {'h':OCRDet.pred(image)}
+TypeError: pred() missing 1 required positional argument: 'image'
+2021-09-28 01:38:00,103 INFO:             errors [in app.py:54]
+2021-09-28 01:38:03,407 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 31, in main
+    return {'h':ocrdet.pred(image)}
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle_label\PaddleOCR\module.py", line 86, in pred
+    dt_boxes, elapse = TextDetector(cfg)(image)#self.text_detector(img)
+  File ".\tools\infer\predict_det.py", line 183, in __call__
+    data = transform(data, self.preprocess_op)
+  File ".\ppocr\data\imaug\__init__.py", line 41, in transform
+    data = op(data)
+  File ".\ppocr\data\imaug\operators.py", line 166, in __call__
+    src_h, src_w, _ = img.shape
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\PIL\Image.py", line 546, in __getattr__
+    raise AttributeError(name)
+AttributeError: shape
+2021-09-28 01:39:30,165 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 31, in main
+    return {'h':ocrdet.pred(image)}
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle_label\PaddleOCR\module.py", line 86, in pred
+    dt_boxes, elapse = TextDetector(cfg)(image)#self.text_detector(img)
+  File ".\tools\infer\predict_det.py", line 183, in __call__
+    data = transform(data, self.preprocess_op)
+  File ".\ppocr\data\imaug\__init__.py", line 41, in transform
+    data = op(data)
+  File ".\ppocr\data\imaug\operators.py", line 166, in __call__
+    src_h, src_w, _ = img.shape
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\PIL\Image.py", line 546, in __getattr__
+    raise AttributeError(name)
+AttributeError: shape
+2021-09-28 01:40:57,463 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 31, in main
+    return {'h':ocrdet.pred(image)}
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle_label\PaddleOCR\module.py", line 86, in pred
+    print(image)
+  File ".\tools\infer\predict_det.py", line 183, in __call__
+    data = transform(data, self.preprocess_op)
+  File ".\ppocr\data\imaug\__init__.py", line 41, in transform
+    data = op(data)
+  File ".\ppocr\data\imaug\operators.py", line 166, in __call__
+    src_h, src_w, _ = img.shape
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\PIL\Image.py", line 546, in __getattr__
+    raise AttributeError(name)
+AttributeError: shape
+2021-09-28 01:41:11,898 INFO:             errors [in app.py:54]
+2021-09-28 01:41:17,999 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 31, in main
+    return {'h':ocrdet.pred(image)}
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle_label\PaddleOCR\module.py", line 87, in pred
+    dt_boxes, elapse = TextDetector(cfg)(image)#self.text_detector(img)
+  File ".\tools\infer\predict_det.py", line 183, in __call__
+    data = transform(data, self.preprocess_op)
+  File ".\ppocr\data\imaug\__init__.py", line 41, in transform
+    data = op(data)
+  File ".\ppocr\data\imaug\operators.py", line 166, in __call__
+    src_h, src_w, _ = img.shape
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\PIL\Image.py", line 546, in __getattr__
+    raise AttributeError(name)
+AttributeError: shape
+2021-09-28 01:44:49,150 INFO:             errors [in app.py:64]
+2021-09-28 01:44:50,761 ERROR:             Exception on / [POST] [in D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Machine_Learning\deep_learning_projects\CHAPTER_1\text_detection\paddle\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 30, in main
+    image = np.asarray(bytearray(image_bytes), dtype="uint8")
+NameError: name 'np' is not defined
+2021-09-28 01:45:19,166 INFO:             errors [in app.py:66]
+2021-09-28 01:46:15,913 INFO:             errors [in app.py:58]
+2021-09-28 01:58:28,326 INFO:             errors [in main.py:58]
+2021-09-28 02:33:27,907 INFO:             errors [in main.py:58]
+2021-09-28 02:34:21,364 INFO:             errors [in main.py:55]
+2021-09-28 09:36:32,971 INFO:             errors [in main.py:50]
+2021-09-28 10:47:16,263 INFO:             errors [in main.py:50]
+2021-09-28 21:39:46,342 INFO:             errors [in main.py:50]
