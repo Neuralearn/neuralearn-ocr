@@ -4,8 +4,8 @@ from logging import Formatter, FileHandler
 from flask import Flask, request, jsonify, render_template
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
-from module import OCRDet
-import cv2
+#from module import OCRDet
+#import cv2
 import numpy as np
 from PIL import Image
 import io
@@ -28,7 +28,7 @@ def main():
     #     image = cv2.imdecode(image, cv2.IMREAD_COLOR)
 
     #     return {'output':OCRDet().pred(image)}
-        
+
     return {'hello':'hello'}
     
 @app.errorhandler(500)
