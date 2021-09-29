@@ -1,3 +1,8 @@
+
+!apt-get update
+!apt-get install -y libsm6 libxext6 libxrender-dev
+!pip install opencv-python
+
 import os
 import logging
 from logging import Formatter, FileHandler
@@ -10,6 +15,7 @@ import numpy as np
 from PIL import Image
 import io
 ####from ocr import process_image
+
 
 app = Flask(__name__)
 _VERSION = 1  # API version
