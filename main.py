@@ -28,7 +28,8 @@ def main():
         image = cv2.imdecode(image, cv2.IMREAD_COLOR)
 
         return {'output':OCRDet().pred(image)}
-
+    return {'hello':'hello'}
+    
 @app.errorhandler(500)
 def internal_error(error):
     print(str(error))  # ghetto logging
@@ -51,4 +52,4 @@ def not_found_error(error):
 
 
 if __name__ == '__main__':
-    app.run(host="127.0.0.1", port=8080, debug=True)
+    app.run(host="127.0.0.1", port=8080, debug = False)
