@@ -32,8 +32,8 @@ def str2bool(v):
 def init_args():
     parser = argparse.ArgumentParser()
     # params for prediction engine
-    parser.add_argument("--use_gpu", type=str2bool, default=True)
-    parser.add_argument("--ir_optim", type=str2bool, default=True)
+    parser.add_argument("--use_gpu", type=str2bool, default=False)
+    parser.add_argument("--ir_optim", type=str2bool, default=False)
     parser.add_argument("--use_tensorrt", type=str2bool, default=False)
     parser.add_argument("--min_subgraph_size", type=int, default=15)
     parser.add_argument("--precision", type=str, default="fp32")
