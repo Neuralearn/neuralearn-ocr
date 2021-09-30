@@ -21,7 +21,7 @@ Flask-Babel==2.0.0
 future==0.18.2
 gast==0.3.3
 gitdb==4.0.7
-GitPython==3.1.24
+GitPython
 h5py==3.4.0
 identify==2.2.15
 idna==3.2
@@ -42,7 +42,7 @@ networkx==2.6.3
 nodeenv==1.6.0
 numpy==1.19.3
 onnx==1.9.0
-opencv-python==4.3.0.36
+opencv-python-headless
 packaging==21.0
 paddle2onnx==0.8.2
 paddlehub==2.1.1
